@@ -185,14 +185,36 @@ namespace HmmFramework
 		}
 		#endregion
 
+		private int GetWorkingStateIndex(string StateName)
+		{
+			int I = 0;
+			foreach(HMM Hmm in m_WorkingStates)
+				if (Hmm.Name == StateName)
+					return I;
+				else I++;
+						
+
+			return -1; //not found
+		}
+
 		public double GetBackwardValue(int Pos, int State)
 		{
 			return BackwardValues[Pos,State];
 		}
 
+		public double GetBackwardValue(int Pos, string StateName)
+		{
+			return BackwardValues[Pos,GetWorkingStateIndex(StateName)];
+		}
+
 		public double GetForwardValue(int Pos, int State)
 		{
 			return ForwardValues[Pos,State];
+		}
+
+		public double GetForwardValue(int Pos, string StateName)
+		{
+			return ForwardValues[Pos,GetWorkingStateIndex(StateName)];
 		}
 	}
 }
