@@ -1,0 +1,36 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HmmFramework/Main.cs">
+    <Files>
+      <File FileName="HmmFramework/Main.cs" Line="15" Column="3" />
+      <File FileName="HmmFramework/HMM.cs" Line="53" Column="1" />
+      <File FileName="HmmFramework/InputManager.cs" Line="87" Column="37" />
+      <File FileName="HmmFramework/ForwardBackward.cs" Line="124" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True">
+          <Node name="HmmFramework" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>M.Groups[0]</Value>
+          <Value>BackwardValues[398,0]</Value>
+          <Value>BackwardValues[398,1]</Value>
+          <Value>BackwardValues[397,0]</Value>
+          <Value>BackwardValues[397,1]</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
