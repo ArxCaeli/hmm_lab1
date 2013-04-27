@@ -6,6 +6,7 @@ namespace HmmFramework
 	{
 		public static void Main (string[] args)
 		{
+			//its a github test
 			if (args.Length != 0)
 				InputManager.ReadFile(args[0]);
 
