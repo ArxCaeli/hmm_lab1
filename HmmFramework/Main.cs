@@ -60,14 +60,14 @@ namespace HmmFramework
 						if (Seq.StateName == TrueRes)
 							TruePos++;
 						else
-							TrueNeg++;
+							FalsePos++;
 					}
 					else
 					{
 						if (Seq.StateName == TrueRes)
-							FalsePos++;
-						else
 							FalseNeg++;
+						else
+							TrueNeg++;
 					}
 				}
 				else

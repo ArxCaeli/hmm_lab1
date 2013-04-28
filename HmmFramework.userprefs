@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HmmFramework/ForwardBackward.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HmmFramework/Main.cs">
     <Files>
-      <File FileName="HmmFramework/Main.cs" Line="70" Column="19" />
+      <File FileName="HmmFramework/Main.cs" Line="63" Column="19" />
       <File FileName="HmmFramework/HMM.cs" Line="53" Column="1" />
       <File FileName="HmmFramework/InputManager.cs" Line="87" Column="37" />
       <File FileName="HmmFramework/ForwardBackward.cs" Line="124" Column="15" />
@@ -10,9 +10,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="HmmFramework" expanded="True">
+          <Node name="HmmFramework" expanded="True" selected="True">
             <Node name="References" expanded="True" />
-            <Node name="ForwardBackward.cs" selected="True" />
           </Node>
         </State>
       </Pad>
