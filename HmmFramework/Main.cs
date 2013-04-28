@@ -18,11 +18,28 @@ namespace HmmFramework
 			InputManager.HmmList.Find (x => x.Name == "B").IsFirst = true;
 			InputManager.HmmList.Find (x => x.Name == "E").IsFinal = true;
 
-			ForwardBackward FB = new ForwardBackward (InputManager.HmmList, InputManager.Sequence);
-			FB.CalcBackward ();
-			FB.CalcForward ();
+//			ForwardBackward FB = new ForwardBackward (InputManager.HmmList, InputManager.Sequence);
+//			FB.CalcBackward ();
+//			FB.CalcForward ();
+//
+//			ExportForwardBackwardResults.Export(FB,"result.txt");
 
-			ExportForwardBackwardResults.Export(FB,"result.txt");
+			Viterbi V = new Viterbi(InputManager.HmmList, InputManager.Sequence);
+			V.RunViterbi();
+
+			for(int I = 0; I < InputManager.Sequence.Count + 2; I++)
+			{
+				foreach(HMM Hmm in InputManager.HmmList)
+					if (!Hmm.IsFirst && !Hmm.IsFinal)
+					{
+						ViterbiResult VR = V.GetResult(I, Hmm);
+						Console.Write(VR.StateName + " " + 
+					    	VR.Possibility.ToString() + " " +
+					        VR.PrevStateName + "\t");
+					}
+				Console.WriteLine();
+			}
+
 		}
 	}
 }

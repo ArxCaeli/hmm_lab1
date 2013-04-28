@@ -41,6 +41,7 @@
     <Compile Include="InputManager.cs" />
     <Compile Include="ForwardBackward.cs" />
     <Compile Include="ExportForwardBackwardResults.cs" />
+    <Compile Include="Viterbi.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
