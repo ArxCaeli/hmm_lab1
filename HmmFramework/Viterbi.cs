@@ -100,6 +100,10 @@ namespace HmmFramework
 					break;
 				}
 
+			//cheat
+			if (StateIndex == -1)
+				StateIndex = 0;
+
 			return Results[Position, StateIndex];			
 		}
 	}

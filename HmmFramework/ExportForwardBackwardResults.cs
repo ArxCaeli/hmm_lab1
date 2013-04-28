@@ -46,7 +46,8 @@ namespace HmmFramework
 					SW.WriteLine(MaxMinPossibility[I,1].ToString() + "\t" + 
 					             SeqPossibility[I] + "\t" +
 					             MaxMinPossibility[I,0] + "\t" +
-					             InputManager.Sequence[I].Sequence);
+					             InputManager.Sequence[I].Sequence + "\t" +
+					             InputManager.Sequence[I].StateName);
 
 			}
 
